@@ -1,7 +1,11 @@
 <html>
   <head>
+    {% load static %}
     <!-- Bootstrap -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="{% static 'ProyectoWebApp/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
 
     <!-- Fonts -->
 
@@ -15,7 +19,10 @@
     />
 
     <!-- Styles -->
-    <link href="/css/gestion.css" rel="stylesheet" />
+    <link
+      href="{% static 'ProyectoWebApp/css/gestion.css' %}"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -86,7 +93,7 @@
         <div class="intro">
           <img
             class="intro-img img-fluid mb-3 mb-lg-0 rounded"
-            src="/img/principal.jpg"
+            src="{% static 'ProyectoWebApp/img/principal.jpg' %}"
             alt=""
           />
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
@@ -160,7 +167,7 @@
     </footer>
 
     <!-- Bootstrap -->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'ProyectoWebApp/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'ProyectoWebApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   </body>
 </html>
